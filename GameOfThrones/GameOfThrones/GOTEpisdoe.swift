@@ -101,7 +101,7 @@ class GOTEpisode {
     
   static func seasonSection() -> [[GOTEpisode]] {
     
-    let sortedGOTepisdes = allEpisodes.sorted { $0.season > $1.season }
+    let sortedGOTepisdes = allEpisodes.sorted { $0.season < $1.season }
     
     let uniqueSeason = Set(sortedGOTepisdes.map { $0.season })
     
